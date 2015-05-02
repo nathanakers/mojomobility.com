@@ -1,0 +1,24 @@
+# not confident in using this, so i commented them out
+# Options +FollowSymlinks
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}.php -f
+# RewriteRule ^(.+)$ /$1.php [L,QSA]
+
+# yes this is crude, but so is my PHP
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	RewriteRule ^home$			home.php
+	RewriteRule ^technology$	technology.php
+	RewriteRule ^solutions$		solutions.php
+	RewriteRule ^patents$		patents.php
+#	RewriteRule ^press$			press.php
+	RewriteRule ^company$		company.php
+	RewriteRule ^contact$		contact.php
+	RewriteRule ^team$			team.php
+	RewriteRule ^careers$		careers.php
+	RewriteRule ^404$			404.php
+</IfModule>
+
+ErrorDocument 404	/404.php

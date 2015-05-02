@@ -1,0 +1,15 @@
+/* humanstxt.org */
+
+/* SITE */
+	Developed for Mojo Mobility
+	2013
+
+/* CREDITS */
+	Nathan Akers, designer and front-end developer
+	nathanakers.com
+	San Francisco, CA
+
+/* THANKS */
+	Twitter Bootstrap
+	AwesomeFont
+	Christopher Burton via Subtle Patterns for his diagonal noise background image: subtlepatterns.com
