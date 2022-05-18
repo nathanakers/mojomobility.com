@@ -22,7 +22,7 @@ $project = array(
 // @var: array
 // NOTE - make sure all these are included in both the @var $pages and the page list in the .htaccess file
 // NOTE - the order they are listed is the order they appear in the menu
-$menuPages = array('technology', 'solutions', 'company', 'patents', 'careers');
+$menuPages = array('technology', 'solutions', 'patents', 'careers', 'contact');
 
 // Non Menu Active Pages
 // @var: array
@@ -78,13 +78,6 @@ $pages = array(
 		'url'		=> 'solutions',
 	),
 
-	'company' => array(
-		'title' 	=> 'Company',
-		'name'		=> 'Company',
-		'phpScript'	=> 'company.php',
-		'url'		=> 'company',
-	),
-
 	'patents' => array(
 		'title' 	=> 'Patents',
 		'name'		=> 'Patents',
@@ -97,8 +90,14 @@ $pages = array(
 		'name'		=> 'Careers',
 		'phpScript'	=> 'careers.php',
 		'url'		=> 'careers',
-//		'in_dropdn'	=> 'company',
 	),
+
+    'contact' => array(
+        'title'     => 'Contact',
+        'name'      => 'Contact',
+        'phpScript' => 'contact.php',
+        'url'       => 'contact',
+    ),
 
 );
 

@@ -263,9 +263,12 @@ section[id*="header"] .big.headline .btn-large {padding:25px 40px; border-radius
 #content-company h3 {margin:0;}
 #content-company h2 + h3 {margin-top:30px;}
 #content-company .maincolumn h4 {margin-top:0;}
+#content-company .sidebar-group {margin-bottom:30px;}
 #content-company .sidebar hr {margin:30px 0;}
 #content-company .sidebar p:last-of-type {margin-bottom:0;}
 #content-company .sidebar-affixed.affix-bottom {top:auto; position:absolute;}
+#content-company .span8 .email-group {float:left; width:50%;}
+#content-company .span8 .email-group {float:left; width:50%;}
 
 
 /* PATENTS */
@@ -368,6 +371,7 @@ body.test #content-solutions  .card .head {display:block;}
     #main .span16.span12-offset2-large .span4.fourths {width:185px;} /* patents */
     #main .span5.span4-offset1-medium {margin-left:40px; width:270px;} /* careers */
     #main .span11.span10-offset0-medium {width:580px;} /* careers */
+    #main .span8.span10-medium {width:580px;}
 }
 
 @media (max-width:979px) {
@@ -396,6 +400,8 @@ body.test #content-solutions  .card .head {display:block;}
 
     #main {border-top-width:147px;}
     #couch-attribution {position:absolute;}
+    #content-company .span8 .email-group {width:auto; float:none;}
+
 }
 
 @media (max-width: 979px) and (min-width: 768px) {
