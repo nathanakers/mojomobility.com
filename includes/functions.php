@@ -18,7 +18,7 @@ $project = array(
 	'base-url'			=> 'localhost/dev.mojomobility.com/'
 );
 
-// Main Menu Page List 
+// Main Menu Page List
 // @var: array
 // NOTE - make sure all these are included in both the @var $pages and the page list in the .htaccess file
 // NOTE - the order they are listed is the order they appear in the menu
@@ -56,14 +56,14 @@ $pages = array(
 		'phpScript'	=> '404.php',
 		'url'		=> '404',
 	),
-		
+
 	'home' => array(
 		'title'		=> 'Home',
 		'name'		=> '<i class="icon-home"></i>',
 		'phpScript'	=> 'home.php',
 		'url'		=> 'home',
 	),
-		
+
 	'technology' => array(
 		'title' 	=> 'Technology',
 		'name'		=> 'Technology',
@@ -148,7 +148,7 @@ $menu .=
 	'<li class="dropdown-company dropdown">
 		<a class="dropdown-toggle" data-toggle="dropdown" title="Company"><span>Company <i class="icon-caret-down"></i></span></a>';
 		/*
-		// create dropdown menu		
+		// create dropdown menu
 		$menu .= '<ul class="dropdown-menu">';
 			foreach ($drop_items_company as $ID) {
 				$menu .= $ID;
@@ -205,13 +205,17 @@ $modal_contact = '
 		<h3>Contact Info</h3>
 	</div>
 	<div class="modal-body big">
-		<img src="assets/images/logomark-color.png" alt=""/>
-		<h4><cms:show g_name /></h4>
-		<div><cms:show g_street /><br><cms:show g_city />, <cms:show g_state />, <cms:show g_zip /></div>
-		<div><cms:show g_phone /></div>
-		<div><cms:show g_email /></div>
+		<img src="assets/images/logomark-color.png" alt="Mojo Mobility logo"/>
+		<h4>Contact Info</h4>
+		<p>
+			3350 Scott Blvd.<br>
+			Bldg. 37A<br>
+			Santa Clara, CA, 95054<br>
+			<a href="tel:6504460004">(650) 446-0004</a><br>
+			<a href="mailto:sales@mojomobility.com">mailto:sales@mojomobility.com</a><br>
+		</p>
 		<hr>
-		<a href="contact" class="btn btn-link">View all contact info →</a>
+		<a href="contact" class="btn btn-link">View all contact info&nbsp;→</a>
 	</div>
 </div>';
 
