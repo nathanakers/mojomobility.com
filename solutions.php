@@ -2,45 +2,45 @@
 // Get absolute path to find our includes files
 // NOTE - we can't get our @var $base-url until we call functions
 global $base_dir;
-$base_dir = rtrim( dirname( realpath( __FILE__ ) ), '/' );
+$base_dir = rtrim(dirname(realpath(__FILE__)), '/');
 
 // Required as the first instance for each page, and for editing using Couch CMS, REF = http://www.couchcms.com/
 // require_once( $base_dir . '/admin-cms/cms.php' );
 // Include Functions & Headers
-include( $base_dir . '/includes/functions.php' );
-include( $base_dir . '/includes/html-app-header.php' );
-include( $base_dir . '/includes/html-content-header.php' );
+include($base_dir . '/includes/functions.php');
+include($base_dir . '/includes/html-app-header.php');
+include($base_dir . '/includes/html-content-header.php');
 ?>
 <!-- // BEGIN PAGE CONTENT (inside #main div) -->
 
 
 <cms:template title="Solution Page Content" clonable="0" executable="1" order="12">
     <cms:editable name="group_general" label="General Page Content" type="group" order="1" />
-        <cms:editable name="intro_headline"   label="Intro Headline"                      group="group_general"  type="text"     order="1" />
+    <cms:editable name="intro_headline" label="Intro Headline" group="group_general" type="text" order="1" />
 
     <cms:editable name="group_mobile" label="Mobile Solutions" type="group" order="2" />
-        <cms:editable name="mobile_title"     label="Mobile Solution Title"               group="group_mobile"   type="text"     order="1" />
-        <cms:editable name="mobile_content"   label="Mobile Solution Content"             group="group_mobile"   type="richtext" order="2" />
+    <cms:editable name="mobile_title" label="Mobile Solution Title" group="group_mobile" type="text" order="1" />
+    <cms:editable name="mobile_content" label="Mobile Solution Content" group="group_mobile" type="richtext" order="2" />
 
     <cms:editable name="group_wearable" label="Wearable Solutions" type="group" order="3" />
-        <cms:editable name="wearable_title"   label="Wearable Solution Title"             group="group_wearable" type="text"     order="1" />
-        <cms:editable name="wearable_content" label="Wearable Solution Content"           group="group_wearable" type="richtext" order="2" />
+    <cms:editable name="wearable_title" label="Wearable Solution Title" group="group_wearable" type="text" order="1" />
+    <cms:editable name="wearable_content" label="Wearable Solution Content" group="group_wearable" type="richtext" order="2" />
 
     <cms:editable name="group_auto" label="Automotive Solutions" type="group" order="4" />
-        <cms:editable name="auto_title"       label="Automotive Solution Title"           group="group_auto"     type="text"     order="1" />
-        <cms:editable name="auto_content"     label="Automotive Solution Content"         group="group_auto"     type="richtext" order="2" />
+    <cms:editable name="auto_title" label="Automotive Solution Title" group="group_auto" type="text" order="1" />
+    <cms:editable name="auto_content" label="Automotive Solution Content" group="group_auto" type="richtext" order="2" />
 
     <cms:editable name="group_ev" label="Electric Vehicle Solutions" type="group" order="5" />
-        <cms:editable name="ev_title"         label="Electric Vehicle Solution Title"     group="group_ev"       type="text"     order="1" />
-        <cms:editable name="ev_content"       label="Electric Vehicle Solution Content"   group="group_ev"       type="richtext" order="2" />
+    <cms:editable name="ev_title" label="Electric Vehicle Solution Title" group="group_ev" type="text" order="1" />
+    <cms:editable name="ev_content" label="Electric Vehicle Solution Content" group="group_ev" type="richtext" order="2" />
 
     <cms:editable name="group_consumer" label="Consumer Solutions" type="group" order="6" />
-        <cms:editable name="consumer_title"   label="Consumer Solution Title"             group="group_consumer" type="text"     order="1" />
-        <cms:editable name="consumer_content" label="Consumer Solution Content"           group="group_consumer" type="richtext" order="2" />
+    <cms:editable name="consumer_title" label="Consumer Solution Title" group="group_consumer" type="text" order="1" />
+    <cms:editable name="consumer_content" label="Consumer Solution Content" group="group_consumer" type="richtext" order="2" />
 
     <cms:editable name="group_other" label="Other Application Solutions" type="group" order="7" />
-        <cms:editable name="other_title"      label="Other Application Solutions Title"   group="group_other"    type="text"     order="1" />
-        <cms:editable name="other_content"    label="Other Application Solutions Content" group="group_other"    type="richtext" order="2" />
+    <cms:editable name="other_title" label="Other Application Solutions Title" group="group_other" type="text" order="1" />
+    <cms:editable name="other_content" label="Other Application Solutions Content" group="group_other" type="richtext" order="2" />
 </cms:template>
 
 
@@ -50,7 +50,7 @@ include( $base_dir . '/includes/html-content-header.php' );
         <div class="row">
             <div class="span12 offset2">
 
-                <h1><cms:show intro_headline /></h1>
+                <h1>Mojo Mobility partners with Original Equipment Manufactures (OEMs) to develop unique, differentiated solutions for wireless charging.</h1>
                 <?php echo $contactDiscuss; ?>
                 <hr>
 
@@ -60,8 +60,8 @@ include( $base_dir . '/includes/html-content-header.php' );
                             <div class="head">
                                 <img src="assets/images/solutions-mobile-bedside.jpg" />
                             </div>
-                            <h3><cms:show mobile_title /></h3>
-                            <cms:show mobile_content />
+                            <h3>Mobile</h3>
+                            <p>Mojo Mobility’s Near Field Power® technology enables mobile device manufacturers to develop innovative products that are charged or powered wirelessly. By using Mojo’s technology, mobile products such as mobile phones, laptops, tablets, and wireless accessories can be charged on one position-free wireless charging surface—drastically reducing the number of chargers manufacturers must produce and consumers carry with them.</p>
                         </div>
                     </div>
                     <div class="span6">
@@ -69,8 +69,8 @@ include( $base_dir . '/includes/html-content-header.php' );
                             <div class="head">
                                 <img src="assets/images/IMG_5471-crop-140429a-newlogo-brannan.jpg" />
                             </div>
-                            <h3><cms:show wearable_title /></h3>
-                            <cms:show wearable_content />
+                            <h3>Wearable Technology</h3>
+                            <p>Wearable electronics pose unique challenges to product designers due to the small volume, minimal weight, and rugged use environments. Mojo Mobility’s Near Field Power® technology provides a position free, waterproof, small volume wireless charging solution that allows product designers to develop advanced, unique products that are charged with no cords attached.</p>
                         </div>
                     </div>
                 </div>
@@ -81,8 +81,8 @@ include( $base_dir . '/includes/html-content-header.php' );
                             <div class="head">
                                 <img src="assets/images/solutions-auto-console.jpg" />
                             </div>
-                            <h3><cms:show auto_title /></h3>
-                            <cms:show auto_content />
+                            <h3>Automotive Infrastructure</h3>
+                            <p>Integration of Mojo’s Near Field Power® technology into the interior of a vehicle allows the occupant to free themselves of the cumbersome mobile device power cord while instantaneously allowing integrated communication with the on board information and entertainment system. The ability to charge multiple devices simultaneously at any location greatly enhances the consumer experience as well as safety within the vehicle.</p>
                         </div>
                     </div>
                     <div class="span6">
@@ -90,8 +90,8 @@ include( $base_dir . '/includes/html-content-header.php' );
                             <div class="head">
                                 <img src="assets/images/solutions-ev-car2.jpg" />
                             </div>
-                            <h3><cms:show ev_title /></h3>
-                            <cms:show ev_content />
+                            <h3>Electric Vehicle Charging</h3>
+                            <p>Mojo’s Near Field Power® technology is truly scalable and wireless power up to 20kW can be achieved. By partnering with major automobile manufacturers and with the backing of the United States Department of Energy, Mojo Mobility is creating high power, highly efficient, and position free wireless charging systems that will transform the way we power and charge electric vehicles.</p>
                         </div>
                     </div>
                 </div>
@@ -102,8 +102,8 @@ include( $base_dir . '/includes/html-content-header.php' );
                             <div class="head">
                                 <img src="assets/images/solutions-consumer-ipad.jpg" />
                             </div>
-                            <h3><cms:show consumer_title /></h3>
-                            <cms:show consumer_content />
+                            <h3>Consumer</h3>
+                            <p>Mojo Mobility’s Near Field Power® technology provides an intuitive, easy to use method for charging or powering multiple devices simultaneously in a position free manner. It allows the consumer to limit the number of charging cords and devices they must keep track of, thus simplifying their lives.</p>
                         </div>
                     </div>
                     <div class="span6">
@@ -111,8 +111,8 @@ include( $base_dir . '/includes/html-content-header.php' );
                             <div class="head">
                                 <img src="assets/images/solutions-other-turbines2.jpg" />
                             </div>
-                            <h3><cms:show other_title /></h3>
-                            <cms:show other_content />
+                            <h3>Other Applications</h3>
+                            <p>Mojo Mobility’s Near Field Power® technology allows medical and industrial devices to benefit from the advantages of wireless charging. The waterproof sealed nature of Mojo’s wireless power technology is ideal for the sterile environments of the medical industry and the harsh environments of industrial application. These vital industries are also able to charge multiple devices simultaneously and efficiently. Most importantly, the lack of cords allow for a simplified charging system.</p>
                         </div>
                     </div>
                 </div>
@@ -127,8 +127,8 @@ include( $base_dir . '/includes/html-content-header.php' );
 <!-- // END PAGE CONTENT -->
 <?php
 // Include Functions & Headers
-include( $base_dir . '/includes/html-content-footer.php' );
-include( $base_dir . '/includes/html-app-footer.php' );
+include($base_dir . '/includes/html-content-footer.php');
+include($base_dir . '/includes/html-app-footer.php');
 
 // Required by Couch CMS, required at end of each page.
 // COUCH::invoke();
