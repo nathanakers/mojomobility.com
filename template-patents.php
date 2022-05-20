@@ -5,7 +5,7 @@ global $base_dir;
 $base_dir = rtrim( dirname( realpath( __FILE__ ) ), '/' );
 
 // Required as the first instance for each page, and for editing using Couch CMS, REF = http://www.couchcms.com/
-require_once( $base_dir . '/admin-cms/cms.php' );
+// require_once( $base_dir . '/admin-cms/cms.php' );
 ?>
 
 
@@ -23,5 +23,5 @@ require_once( $base_dir . '/admin-cms/cms.php' );
 
 <?php
 // Required by Couch CMS, required at end of each page.
-COUCH::invoke();
+// COUCH::invoke();
 ?>

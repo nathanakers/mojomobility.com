@@ -5,7 +5,7 @@ global $base_dir;
 $base_dir = rtrim( dirname( realpath( __FILE__ ) ), '/' );
 
 // Required as the first instance for each page, and for editing using Couch CMS, REF = http://www.couchcms.com/
-require_once( $base_dir . '/admin-cms/cms.php' );
+// require_once( $base_dir . '/admin-cms/cms.php' );
 // Include Functions & Headers
 include( $base_dir . '/includes/functions.php' );
 include( $base_dir . '/includes/html-app-header.php' );
@@ -26,7 +26,7 @@ include( $base_dir . '/includes/html-content-header.php' );
         <cms:editable name="body_content"      label="Body Content"               group="group_body"    type="richtext" order="2" required="1" />
         <cms:editable name="wwd_header"        label="What We Do Header"          group="group_body"    type="text"     order="3"              desc="Default is 'What We Do'" >What We Do</cms:editable>
         <cms:editable name="what_we_do"        label="What We Do"                 group="group_body"    type="richtext" order="4" required="1" />
-        <cms:editable name="pov_header"        label="Point of View Header"       group="group_body"    type="text"     order="5"              desc="Default is 'Our Point of View" >Our Point of View</cms:editable> 
+        <cms:editable name="pov_header"        label="Point of View Header"       group="group_body"    type="text"     order="5"              desc="Default is 'Our Point of View" >Our Point of View</cms:editable>
         <cms:editable name="point_of_view"     label="Our Point of View"          group="group_body"    type="richtext" order="6" required="1" />
         <cms:editable name="button_technology" label="Button links to Technology" group="group_body"    type="text"     order="7" required="1" desc="This text is followed by  →" />
         <cms:editable name="button_solutions"  label="Button links to Solutions"  group="group_body"    type="text"     order="8" required="1" desc="This text is followed by  →" />
@@ -110,8 +110,8 @@ include( $base_dir . '/includes/html-content-header.php' );
 
                 <h1><cms:show intro_headline /></h1>
                 <p class="icons">
-                    <i class="icon-mobile-phone"></i> 
-                    <i class="icon-home"></i> 
+                    <i class="icon-mobile-phone"></i>
+                    <i class="icon-home"></i>
                     <i class="icon-dashboard"></i>
                 </p>
                 <cms:show body_content />
@@ -144,5 +144,5 @@ include( $base_dir . '/includes/html-content-footer.php' );
 include( $base_dir . '/includes/html-app-footer.php' );
 
 // Required by Couch CMS, required at end of each page.
-COUCH::invoke();
+// COUCH::invoke();
 ?>
