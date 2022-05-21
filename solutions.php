@@ -14,37 +14,6 @@ include($base_dir . '/includes/html-content-header.php');
 <!-- // BEGIN PAGE CONTENT (inside #main div) -->
 
 
-<cms:template title="Solution Page Content" clonable="0" executable="1" order="12">
-    <cms:editable name="group_general" label="General Page Content" type="group" order="1" />
-    <cms:editable name="intro_headline" label="Intro Headline" group="group_general" type="text" order="1" />
-
-    <cms:editable name="group_mobile" label="Mobile Solutions" type="group" order="2" />
-    <cms:editable name="mobile_title" label="Mobile Solution Title" group="group_mobile" type="text" order="1" />
-    <cms:editable name="mobile_content" label="Mobile Solution Content" group="group_mobile" type="richtext" order="2" />
-
-    <cms:editable name="group_wearable" label="Wearable Solutions" type="group" order="3" />
-    <cms:editable name="wearable_title" label="Wearable Solution Title" group="group_wearable" type="text" order="1" />
-    <cms:editable name="wearable_content" label="Wearable Solution Content" group="group_wearable" type="richtext" order="2" />
-
-    <cms:editable name="group_auto" label="Automotive Solutions" type="group" order="4" />
-    <cms:editable name="auto_title" label="Automotive Solution Title" group="group_auto" type="text" order="1" />
-    <cms:editable name="auto_content" label="Automotive Solution Content" group="group_auto" type="richtext" order="2" />
-
-    <cms:editable name="group_ev" label="Electric Vehicle Solutions" type="group" order="5" />
-    <cms:editable name="ev_title" label="Electric Vehicle Solution Title" group="group_ev" type="text" order="1" />
-    <cms:editable name="ev_content" label="Electric Vehicle Solution Content" group="group_ev" type="richtext" order="2" />
-
-    <cms:editable name="group_consumer" label="Consumer Solutions" type="group" order="6" />
-    <cms:editable name="consumer_title" label="Consumer Solution Title" group="group_consumer" type="text" order="1" />
-    <cms:editable name="consumer_content" label="Consumer Solution Content" group="group_consumer" type="richtext" order="2" />
-
-    <cms:editable name="group_other" label="Other Application Solutions" type="group" order="7" />
-    <cms:editable name="other_title" label="Other Application Solutions Title" group="group_other" type="text" order="1" />
-    <cms:editable name="other_content" label="Other Application Solutions Content" group="group_other" type="richtext" order="2" />
-</cms:template>
-
-
-
 <section id="content-solutions">
     <div class="container cards">
         <div class="row">
