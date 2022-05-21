@@ -16,7 +16,7 @@
 
 				<div class="row">
 					<div class="span5">
-						<p>© <?php echo date("Y"); ?> Copyright <cms:show g_name_f /></p>
+						<p>© <?php echo date("Y"); ?> Copyright Mojo Mobility, Inc.</p>
 					</div>
 
 					<div class="span11">
@@ -33,7 +33,7 @@
 <!-- End Footer -->
 
 <!-- Begin Modals -->
-<?php echo $modal_contact; ?>
+<?php echo $modalContact; ?>
 <!-- End Modals -->
 
 

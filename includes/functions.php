@@ -114,6 +114,7 @@ foreach ($pages as $ID => $page) {
 	}
 }
 
+
 // Main Menu HTML
 // @script
 // NOTE - this creates the main menu HTML and sets unique classes for each link, and sets the current page menu to active
@@ -193,31 +194,79 @@ $menuFullReverse .= '</ul></nav>';
 // Calls #modal-contact, in footer
 $contactDiscuss = '
 <div class="contact-discuss-wrap">
-	<a class="btn btn-large btn-inverse btn-mojoblue btn-mojostyleflat" href="#modal-contact" data-toggle="modal"><i class="icon-envelope"></i> Contact us to discuss your application</a>
+	<a class="btn btn-large btn-inverse btn-mojoblue btn-mojostyleflat" href="#modal-contact" data-toggle="modal">
+		<i class="icon-envelope"></i>
+		Contact us to discuss your application
+	</a>
 </div>';
 
 
+// Email list
+// @var: array
+//	:array identifier
+//		:name 		= email name
+//		:address	= email address
+$emails = array(
+    'sales' => array(
+        'name'      => 'Sales / General',
+        'address'   => 'sales@mojomobility.com',
+    ),
+	'hr' => array(
+		'name'      => 'HR / Careers',
+		'address'   => 'hr@mojomobility.com',
+	),
+	'accounting' => array(
+		'name'      => 'Accounting',
+		'address'   => 'accounting@mojomobility.com',
+	),
+	'business' => array(
+		'name'      => 'Business Development',
+		'address'   => 'bus.dev@mojomobility.com',
+	),
+);
+
+
+// Email List
+// @script
+$emailList = '
+<div class="email-group">';
+foreach ($emails as $email) {
+	$e = $email[$ID];
+	$emailList .= sprintf('<h5>%s</h5>' . "\n" . '<a href="mailto:%s">%s</a>' . "\n", $e['name'], $e['address']);
+};
+$emailList .= '</div>';
+
+
+// Address
+$contactInfo = '
+3350 Scott Blvd.</br>
+Bldg. 37A<br>
+Santa Clara, CA, 95054<br>
+<a href="tel:6504460004">(650) 446-0004</a><br>';
+
+
 // Modals
-$modal_contact = '
+$modalContact = '
 <div id="modal-contact" tabindex="-1" role="dialog" class="modal hide fade">
 	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></button>
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+			<i class="icon-remove"></i>
+		</button>
 		<h3>Contact Info</h3>
 	</div>
 	<div class="modal-body big">
-		<img src="assets/images/logomark-color.png" alt="Mojo Mobility logo"/>
+		<img src="/assets/images/logomark-color.png" alt="Mojo Mobility logo"/>
 		<h4>Contact Info</h4>
-		<p>
-			3350 Scott Blvd.<br>
-			Bldg. 37A<br>
-			Santa Clara, CA, 95054<br>
-			<a href="tel:6504460004">(650) 446-0004</a><br>
-			<a href="mailto:sales@mojomobility.com">mailto:sales@mojomobility.com</a><br>
+		<p>';
+			$modalContact .= echo $contactInfo;
+			$modalContact .= '<a href="mailto:sales@mojomobility.com">mailto:sales@mojomobility.com</a><br>
 		</p>
 		<hr>
 		<a href="contact" class="btn btn-link">View all contact info&nbsp;→</a>
 	</div>
 </div>';
+
+
 
 // END FUNCTIONS INCLUDES FILE
 ?>
