@@ -37,16 +37,7 @@ include($base_dir . '/includes/html-content-header.php');
                                 </p>
                             </div>
                             <div class="span4">
-                                <cms:pages masterpage="template-globals.php">
-                                    <cms:show_repeatable "all_company_emails">
-                                        <h5>
-                                            <cms:show email_title />
-                                        </h5>
-                                        <a href="mailto:<cms:show email_address />">
-                                            <cms:show email_address />
-                                        </a>
-                                    </cms:show_repeatable>
-                                </cms:pages>
+                                <?php echo $emailList ?>
                             </div>
                         </div>
 
