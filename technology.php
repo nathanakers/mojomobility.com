@@ -14,33 +14,6 @@ include($base_dir . '/includes/html-content-header.php');
 <!-- // BEGIN PAGE CONTENT (inside #main div) -->
 
 
-<cms:template title="Technology Page Content" clonable="0" executable="1" order="11">
-    <cms:editable name="group_general" label="General Page Content" type="group" order="1" />
-    <cms:editable name="intro_headline" label="Intro Headline" group="group_general" type="text" order="1" />
-
-    <cms:editable name="group_position_free" label="Position Free Technology" type="group" order="2" />
-    <cms:editable name="position_free_title" label="Position Free Title" group="group_position_free" type="text" order="1" />
-    <cms:editable name="position_free_content" label="Position Free Content" group="group_position_free" type="richtext" order="2" />
-
-    <cms:editable name="group_multi_device" label="Multi-Device Technology" type="group" order="3" />
-    <cms:editable name="multi_device_title" label="Multi-Device Title" group="group_multi_device" type="text" order="1" />
-    <cms:editable name="multi_device_content" label="Multi-Device Content" group="group_multi_device" type="richtext" order="2" />
-
-    <cms:editable name="group_integration" label="Integration Technology" type="group" order="4" />
-    <cms:editable name="integration_title" label="Integration Title" group="group_integration" type="text" order="1" />
-    <cms:editable name="integration_content" label="Integration Content" group="group_integration" type="richtext" order="2" />
-
-    <cms:editable name="group_wireless" label="Wireless Technology" type="group" order="5" />
-    <cms:editable name="wireless_vs_title" label="Wireless vs Cord Title" group="group_wireless" type="text" order="1" />
-    <cms:editable name="wireless_vs_content" label="Wireless vs Cord Content" group="group_wireless" type="richtext" order="2" />
-
-    <cms:editable name="group_safe_charging" label="Safe-Charging Technology" type="group" order="6" />
-    <cms:editable name="safe_charging_title" label="Safe Charging Title" group="group_safe_charging" type="text" order="1" />
-    <cms:editable name="safe_charging_content" label="Safe Charging Content" group="group_safe_charging" type="richtext" order="2" />
-</cms:template>
-
-
-
 <section id="content-technology" class="cards">
     <div class="container">
         <div class="row">
