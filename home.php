@@ -28,7 +28,7 @@ include($base_dir . '/includes/html-content-header.php');
         <!-- Carousel items -->
         <div class="carousel-inner">
             <div class="item active" id="item-desk">
-                <img src="assets/images/slider-desk.jpg" />
+                <img src="/_testing/assets/images/slider-desk.jpg" />
                 <div class="over-text">
                     <div class="container">
                         <div class="row">
@@ -42,7 +42,7 @@ include($base_dir . '/includes/html-content-header.php');
                 </div>
             </div>
             <div class="item" id="item-bedside">
-                <img src="assets/images/slider-bed.jpg" />
+                <img src="/_testing/assets/images/slider-bed.jpg" />
                 <div class="over-text">
                     <div class="container">
                         <div class="row">
@@ -56,7 +56,7 @@ include($base_dir . '/includes/html-content-header.php');
                 </div>
             </div>
             <div class="item" id="item-cafe">
-                <img src="assets/images/slider-cafe.jpg" />
+                <img src="/_testing/assets/images/slider-cafe.jpg" />
                 <div class="over-text">
                     <div class="container">
                         <div class="row">
@@ -70,7 +70,7 @@ include($base_dir . '/includes/html-content-header.php');
                 </div>
             </div>
             <div class="item" id="item-car">
-                <img src="assets/images/slider-car.jpg" />
+                <img src="/_testing/assets/images/slider-car.jpg" />
                 <div class="over-text">
                     <div class="container">
                         <div class="row">

@@ -18,7 +18,7 @@
 
 					<!-- Be sure to leave the brand out there if you want it shown -->
 					<a class="brand" href="/">
-						<img src="assets/images/logo.png" alt="Mojo Mobility logo" />
+						<img src="/_testing/assets/images/logo.png" alt="Mojo Mobility logo" />
 					</a>
 
 					<!-- Everything you want hidden at 940px or less, place within here -->
@@ -38,9 +38,10 @@
 <div id="main">
 
 
-	<?php // THE PAGE CONTENT IS INSERTED HERE ?>
+	<?php // THE PAGE CONTENT IS INSERTED HERE
+	?>
 
 
-<?php
-// END HTML HEADER
-?>
+	<?php
+	// END HTML HEADER
+	?>
