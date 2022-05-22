@@ -32,15 +32,9 @@ include( $base_dir . '/includes/html-content-header.php' );
 </cms:template>
 
 
-<?php // finds if job exists ?>
-<cms:set jobs_count="<cms:pages masterpage='template-careers.php' count_only='1' />" />
-
-
 <section id="content-careers">
     <div class="container">
         <div class="row">
-
-            <!--cms:if jobs_count -->
 
                 <div class="span5 span4-offset1-medium span4-offset2-large sidebar">
                     <nav class="sidebar-affixed" id="jobnav">

@@ -191,16 +191,6 @@ foreach ($reverseAllActivePagesOrder as $ID) {
 $menuFullReverse .= '</ul></nav>';
 
 
-// Calls #modal-contact, in footer
-$contactDiscuss = '
-<div class="contact-discuss-wrap">
-	<a class="btn btn-large btn-inverse btn-mojoblue btn-mojostyleflat" href="#modal-contact" data-toggle="modal">
-		<i class="icon-envelope"></i>
-		Contact us to discuss your application
-	</a>
-</div>';
-
-
 // Email list
 // @var: array
 //	:array identifier
@@ -239,14 +229,27 @@ $emailList .= '</div>';
 
 // Address
 $contactInfo = '
+<!-- FUNCTIONS -->
 3350 Scott Blvd.</br>
 Bldg. 37A<br>
 Santa Clara, CA, 95054<br>
 <a href="tel:6504460004">(650) 446-0004</a><br>';
 
 
+// Calls #modal-contact, in footer
+$contactDiscuss = '
+<!-- FUNCTIONS -->
+<div class="contact-discuss-wrap">
+	<a class="btn btn-large btn-inverse btn-mojoblue btn-mojostyleflat" href="#modal-contact" data-toggle="modal">
+		<i class="icon-envelope"></i>
+		Contact us to discuss your application
+	</a>
+</div>';
+
+
 // Modals
 $modalContact = '
+<!-- FUNCTIONS -->
 <div id="modal-contact" tabindex="-1" role="dialog" class="modal hide fade">
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
@@ -267,6 +270,12 @@ $modalContact = '
 </div>';
 
 
+// Jobs List
+$jobs = array(
+    'sales' => array(
+
+	),
+);
 
 // END FUNCTIONS INCLUDES FILE
 ?>
