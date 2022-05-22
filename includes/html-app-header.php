@@ -5,27 +5,12 @@
 // NOTE - built with Bootstrap 2.3 in mind, downloaded REF = http://www.initializr.com/
 // NOTE - you should not have to change anything in here unless you are updating from Bootstrap 2.3 or you have moved your files around
 // NOTE - 'filemtime' is a PHP variable used here to force browser cache-updating whenever the file is modified
-
-
-// COUCH CMS: this sets easy variables, visible by every page. the prefix "g_" is just intended for "global" attributes.
 ?>
-<cms:pages masterpage="template-globals.php">
-	<cms:set g_name=company_name "global" />
-	<cms:set g_name_f=company_name_full "global" />
-	<cms:set g_phone=phone "global" />
-	<cms:set g_email=email_common "global" />
-	<cms:set g_email_hr=email_hr "global" />
-	<cms:set g_street=address_street "global" />
-	<cms:set g_city=address_city "global" />
-	<cms:set g_state=address_state "global" />
-	<cms:set g_zip=address_zip "global" />
-</cms:pages>
 
 
 <!DOCTYPE html>
-<?php // Set IE classes and a dynamic class for the current screen (@var set in functions.php) \\
-?>
 <?php
+// Set IE classes and a dynamic class for the current screen (@var set in functions.php) \\
 echo '
 <!--[if lt IE 7]>		<html class="no-js screen-' . $currentPageID . ' lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>			<html class="no-js screen-' . $currentPageID . ' lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -44,7 +29,7 @@ echo '
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="<?php echo $project['meta-description']; ?>">
 	<title>
-		<cms:show g_name /> • <?php echo $currentPage['title']; ?>
+		<?php echo $currentPage['title']; ?> | Mojo Mobility
 	</title>
 	<?php /* Icons: Favicon + Apple Touch
 		   * Included in /assets/images/ instead of domain root in case this site isn't itself at the root.

@@ -13,7 +13,6 @@ include( $base_dir . '/includes/html-content-header.php' );
 ?>
 <!-- // BEGIN PAGE CONTENT (inside #main div) -->
 
-
 <cms:template title="Career Page Content" clonable="0" executable="1" order="16">
     <cms:editable name="group_sidebar" label="Sidebar Content" type="group" order="1"/>
         <cms:editable name="job_nav_header"              label="Sidebar Header"               group="group_sidebar"      type="text" order="1" desc="Default is 'Current Openings'" >Current Openings</cms:editable>
@@ -35,7 +34,6 @@ include( $base_dir . '/includes/html-content-header.php' );
 
 <?php // finds if job exists ?>
 <cms:set jobs_count="<cms:pages masterpage='template-careers.php' count_only='1' />" />
-
 
 <section id="content-careers">
     <div class="container">

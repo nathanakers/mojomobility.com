@@ -98,7 +98,4 @@ include($base_dir . '/includes/html-content-header.php');
 // Include Functions & Headers
 include($base_dir . '/includes/html-content-footer.php');
 include($base_dir . '/includes/html-app-footer.php');
-
-// Required by Couch CMS, required at end of each page.
-// COUCH::invoke();
 ?>
