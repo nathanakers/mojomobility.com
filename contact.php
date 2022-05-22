@@ -1,8 +1,8 @@
 <?php
 // Include Functions & Headers
-include('/includes/functions.php');
-include('/includes/html-app-header.php');
-include('/includes/html-content-header.php');
+include('/_testing/includes/functions.php');
+include('/_testing/includes/html-app-header.php');
+include('/_testing/includes/html-content-header.php');
 ?>
 <!-- // BEGIN PAGE CONTENT (inside #main div) -->
 
@@ -32,6 +32,6 @@ include('/includes/html-content-header.php');
 <!-- // END PAGE CONTENT -->
 <?php
 // Include Functions & Headers
-include('/includes/html-content-footer.php');
-include('/includes/html-app-footer.php');
+include('/_testing/includes/html-content-footer.php');
+include('/_testing/includes/html-app-footer.php');
 ?>
