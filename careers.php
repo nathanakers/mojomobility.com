@@ -35,6 +35,7 @@ include( $base_dir . '/includes/html-content-header.php' );
 <?php // finds if job exists ?>
 <cms:set jobs_count="<cms:pages masterpage='template-careers.php' count_only='1' />" />
 
+
 <section id="content-careers">
     <div class="container">
         <div class="row">

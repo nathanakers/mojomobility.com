@@ -1,13 +1,8 @@
 <?php
-// Get absolute path to find our includes files
-// NOTE - we can't get our @var $base-url until we call functions
-global $base_dir;
-$base_dir = rtrim(dirname(realpath(__FILE__)), '/');
-
 // Include Functions & Headers
-include($base_dir . '/includes/functions.php');
-include($base_dir . '/includes/html-app-header.php');
-include($base_dir . '/includes/html-content-header.php');
+include('/includes/functions.php');
+include('/includes/html-app-header.php');
+include('/includes/html-content-header.php');
 ?>
 <!-- // BEGIN PAGE CONTENT (inside #main div) -->
 
@@ -37,6 +32,6 @@ include($base_dir . '/includes/html-content-header.php');
 <!-- // END PAGE CONTENT -->
 <?php
 // Include Functions & Headers
-include($base_dir . '/includes/html-content-footer.php');
-include($base_dir . '/includes/html-app-footer.php');
+include('/includes/html-content-footer.php');
+include('/includes/html-app-footer.php');
 ?>

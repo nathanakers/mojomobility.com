@@ -5,7 +5,7 @@ global $base_dir;
 $base_dir = rtrim( dirname( realpath( __FILE__ ) ), '/' );
 
 // Required as the first instance for each page, and for editing using Couch CMS, REF = http://www.couchcms.com/
-// require_once( $base_dir . '/admin-cms/cms.php' );
+require_once( $base_dir . '/admin-cms/cms.php' );
 // Include Functions & Headers
 include( $base_dir . '/includes/functions.php' );
 include( $base_dir . '/includes/html-app-header.php' );
@@ -88,5 +88,5 @@ include( $base_dir . '/includes/html-content-footer.php' );
 include( $base_dir . '/includes/html-app-footer.php' );
 
 // Required by Couch CMS, required at end of each page.
-// COUCH::invoke();
+COUCH::invoke();
 ?>
