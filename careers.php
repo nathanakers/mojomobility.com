@@ -41,15 +41,18 @@ include( $base_dir . '/includes/html-content-header.php' );
     <div class="container">
         <div class="row">
 
-            <cms:if jobs_count >
+            <!--cms:if jobs_count -->
 
                 <div class="span5 span4-offset1-medium span4-offset2-large sidebar">
                     <nav class="sidebar-affixed" id="jobnav">
-                        <h2><cms:show job_nav_header /></h2>
+                        <h2>Current Openings</h2>
                         <ul class="nav sidenav">
-                            <cms:pages masterpage="template-careers.php">
-                                <li class="link-<cms:show job_id />"><a href="#job-<cms:show job_id />"><i class="icon-chevron-right"></i> <cms:show job_title /></a></li>
-                            </cms:pages>
+                            <li class="link-<cms:show job_id />">
+                                <a href="#job-<cms:show job_id />">
+                                    <i class="icon-chevron-right"></i>
+                                    <cms:show job_title />
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -84,14 +87,14 @@ include( $base_dir . '/includes/html-content-header.php' );
                     </div>
                 </div>
 
-            <cms:else />
+            <!--cms:else /-->
 
                 <div class="span16 span14-offset1-medium span12-offset2-large">
                     <h1><cms:show no_posted_job />&nbsp;<a href="mailto:<cms:show g_email_hr />"><cms:show g_email_hr /></a>.</h1>
                     <hr>
                 </div>
 
-            </cms:if>
+            <!--/cms:if-->
 
         </div>
     </div>
