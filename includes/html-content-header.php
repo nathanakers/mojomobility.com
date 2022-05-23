@@ -24,9 +24,9 @@
 					<!-- Everything you want hidden at 940px or less, place within here -->
 					<div class="nav-collapse collapse">
 						<!-- .nav, .navbar-search, .navbar-form, etc -->
-						<?php echo $menu; ?>
+						<?php echo $XXXmenu; ?>
 						<!-- same nav, except "home" is not an icon -->
-						<?php echo $menuFull; ?>
+						<?php echo $XXXmenuFull; ?>
 					</div>
 
 				</div>

@@ -72,7 +72,7 @@ include('/_testing/includes/html-content-header.php');
                             <li>Thermal modeling experience</li>
                         </ul>
 
-                        <?php echo $sendResumeTo; ?>
+                        <?php echo $XXXsendResumeTo; ?>
                     </div>
                     <div class="joblisting" id="job-HWFW1">
                         <h3>Hardware/Firmware Engineer</h3>
@@ -110,7 +110,7 @@ include('/_testing/includes/html-content-header.php');
                             <li>Min 7 Years of related embedded development experience</li>
                         </ul>
 
-                        <?php echo $sendResumeTo; ?>
+                        <?php echo $XXXsendResumeTo; ?>
                     </div>
                     <div class="joblisting" id="job-MOJO_EE">
                         <h3>Electrical Engineer</h3>
@@ -151,7 +151,7 @@ include('/_testing/includes/html-content-header.php');
                             <li>Experience with Electromagnetic Emission and other Regulatory standards</li>
                         </ul>
 
-                        <?php echo $sendResumeTo; ?>
+                        <?php echo $XXXsendResumeTo; ?>
                     </div>
                 </div>
             </div>

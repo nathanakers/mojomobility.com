@@ -20,8 +20,8 @@
 					</div>
 
 					<div class="span11">
-						<?php echo $menuFull; ?>
-						<?php echo $menuFullReverse; ?>
+						<?php echo $XXXmenuFull; ?>
+						<?php echo $XXXmenuFullReverse; ?>
 					</div>
 				</div>
 
@@ -33,7 +33,7 @@
 <!-- End Footer -->
 
 <!-- Begin Modals -->
-<?php echo $modalContact; ?>
+<?php echo $XXXmodalContact; ?>
 <!-- End Modals -->
 
 

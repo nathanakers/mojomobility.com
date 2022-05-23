@@ -17,7 +17,7 @@ include('/_testing/includes/html-content-header.php');
                 <div class="row">
                     <div class="span4">
                         <h2>Visit One of Our Pages</h2>
-                        <?php echo $menuFull; ?>
+                        <?php echo $XXXmenuFull; ?>
                     </div>
                     <div class="span7 offset1">
 
@@ -26,11 +26,11 @@ include('/_testing/includes/html-content-header.php');
                                 <h2>Contact Us</h2>
                                 <h3>Mojo Mobility</h3>
                                 <p>
-                                    <?php echo $contactInfo ?>
+                                    <?php echo $XXXcontactInfo ?>
                                 </p>
                             </div>
                             <div class="span4">
-                                <?php echo $emailList ?>
+                                <?php echo $XXXemailList ?>
                             </div>
                         </div>
 

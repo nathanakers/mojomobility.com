@@ -13,7 +13,7 @@ include('/_testing/includes/html-content-header.php');
             <div class="span12 offset2">
 
                 <h1>Mojo Mobility partners with Original Equipment Manufactures (OEMs) to develop unique, differentiated solutions for wireless charging.</h1>
-                <?php echo $contactDiscuss; ?>
+                <?php echo $XXXcontactDiscuss; ?>
                 <hr>
 
                 <div class="row">

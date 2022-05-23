@@ -12,10 +12,10 @@
 <?php
 // Set IE classes and a dynamic class for the current screen (@var set in functions.php) \\
 echo '
-<!--[if lt IE 7]>		<html class="no-js screen-' . $currentPageID . ' lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>			<html class="no-js screen-' . $currentPageID . ' lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>			<html class="no-js screen-' . $currentPageID . ' lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->	<html class="no-js screen-' . $currentPageID . '" lang="en"> <!--<![endif]-->'; ?>
+<!--[if lt IE 7]>		<html class="no-js screen-' . $XXXcurrentPageID . ' lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>			<html class="no-js screen-' . $XXXcurrentPageID . ' lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>			<html class="no-js screen-' . $XXXcurrentPageID . ' lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js screen-' . $XXXcurrentPageID . '" lang="en"> <!--<![endif]-->'; ?>
 
 <head>
 	<?php /* Important Standards:
@@ -27,9 +27,9 @@ echo '
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="description" content="<?php echo $project['meta-description']; ?>">
+	<meta name="description" content="<?php echo $XXXproject['meta-description']; ?>">
 	<title>
-		<?php echo $currentPage['title']; ?> | Mojo Mobility
+		<?php echo $XXXcurrentPage['title']; ?> | Mojo Mobility
 	</title>
 	<?php /* Icons: Favicon + Apple Touch
 		   * Included in /assets/images/ instead of domain root in case this site isn't itself at the root.

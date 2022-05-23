@@ -13,7 +13,7 @@ include('/_testing/includes/html-content-header.php');
             <div class="span12 offset2">
 
                 <h1>Mojo’s patented Near Field Power® enables next generation wireless charging systems.</h1>
-                <?php echo $contactDiscuss; ?>
+                <?php echo $XXXcontactDiscuss; ?>
                 <hr>
 
                 <div class="row">

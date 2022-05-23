@@ -15,12 +15,12 @@ include('/_testing/includes/html-content-header.php');
                 <div class="sidebar-group">
                     <h3>Mojo Mobility</h3>
                     <p>
-                        <?php echo $contactInfo; ?>
+                        <?php echo $XXXcontactInfo; ?>
                     </p>
                 </div>
             </div>
             <div class="span8 span10-medium clearfix">
-                <?php echo $emailList; ?>
+                <?php echo $XXXemailList; ?>
             </div>
 
         </div>
