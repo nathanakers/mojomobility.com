@@ -7,6 +7,16 @@ include('/_testing/includes/html-content-header.php');
 <!-- // BEGIN PAGE CONTENT (inside #main div) -->
 
 
+<?php
+// End of Job Paragraph
+$sendResumeTo = '
+<p>Please submit your resume to&nbsp;<a href="mailto:hr@mojomobility.com">hr@mojomobility.com</a>.
+    <br>Principals only. Recruiters: please do not contact Mojo Mobility for this position. Please, no phone calls about this job.
+</p>
+<hr>';
+?>
+
+
 <section id="content-careers">
     <div class="container">
         <div class="row">
@@ -72,7 +82,7 @@ include('/_testing/includes/html-content-header.php');
                             <li>Thermal modeling experience</li>
                         </ul>
 
-                        <?php echo $XXXsendResumeTo; ?>
+                        <?php echo $sendResumeTo; ?>
                     </div>
                     <div class="joblisting" id="job-HWFW1">
                         <h3>Hardware/Firmware Engineer</h3>
@@ -110,7 +120,7 @@ include('/_testing/includes/html-content-header.php');
                             <li>Min 7 Years of related embedded development experience</li>
                         </ul>
 
-                        <?php echo $XXXsendResumeTo; ?>
+                        <?php echo $sendResumeTo; ?>
                     </div>
                     <div class="joblisting" id="job-MOJO_EE">
                         <h3>Electrical Engineer</h3>
@@ -151,7 +161,7 @@ include('/_testing/includes/html-content-header.php');
                             <li>Experience with Electromagnetic Emission and other Regulatory standards</li>
                         </ul>
 
-                        <?php echo $XXXsendResumeTo; ?>
+                        <?php echo $sendResumeTo; ?>
                     </div>
                 </div>
             </div>

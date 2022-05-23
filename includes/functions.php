@@ -270,13 +270,6 @@ $XXXmodalContact = '
 </div>';
 
 
-// End of Job Paragraph
-$XXXsendResumeTo = '
-<p>Please submit your resume to&nbsp;<a href="mailto:hr@mojomobility.com">hr@mojomobility.com</a>.
-	<br>Principals only. Recruiters: please do not contact Mojo Mobility for this position. Please, no phone calls about this job.
-</p>
-<hr>';
-
 
 // END FUNCTIONS INCLUDES FILE
 ?>
