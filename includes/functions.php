@@ -230,7 +230,7 @@ $XXXemailList .= '</div>';
 // Address
 $XXXcontactInfo = '
 <!-- FUNCTIONS -->
-3350 Scott Blvd.</br>
+3350 Scott Blvd...</br>
 Bldg. 37A<br>
 Santa Clara, CA, 95054<br>
 <a href="tel:6504460004">(650) 446-0004</a><br>';
@@ -261,7 +261,7 @@ $XXXmodalContact = '
 		<img src="/_testing/assets/images/logomark-color.png" alt="Mojo Mobility logo"/>
 		<h4>Contact Info</h4>
 		<p>';
-			$XXXmodalContact .= echo $XXXXXXcontactInfo;
+			$XXXmodalContact .= echo $XXXcontactInfo;
 			$XXXmodalContact .= '<a href="mailto:sales@mojomobility.com">mailto:sales@mojomobility.com</a><br>
 		</p>
 		<hr>
