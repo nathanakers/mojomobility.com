@@ -60,16 +60,16 @@ $patent_box = '
                     </cms:if>
                     <div class="row">
                         <cms:pages masterpage="template-patents.php" folder="patent_type_us" orderby="patent_id" order="desc">
-                            <?php echo $XXXpatent_box; ?>
+                            <?php echo $patent_box; ?>
                         </cms:pages>
                         <cms:pages masterpage="template-patents.php" folder="patent_type_us_pending" orderby="patent_id" order="desc">
-                            <?php echo $XXXpatent_box; ?>
+                            <?php echo $patent_box; ?>
                         </cms:pages>
                         <cms:pages masterpage="template-patents.php" folder="patent_type_non_us" orderby="patent_id" order="desc">
-                            <?php echo $XXXpatent_box; ?>
+                            <?php echo $patent_box; ?>
                         </cms:pages>
                         <cms:pages masterpage="template-patents.php" folder="patent_type_non_us_pending" orderby="patent_id" order="desc">
-                            <?php echo $XXXpatent_box; ?>
+                            <?php echo $patent_box; ?>
                         </cms:pages>
                     </div>
                     <hr>

@@ -4,7 +4,8 @@
 // @requires: functions.php, app-header.php, app-footer.php, html-header.php
 ?>
 
-			<?php // THE PAGE CONTENT WAS INSERTED HERE ?>
+<?php // THE PAGE CONTENT WAS INSERTED HERE
+?>
 
 
 </div> <!-- #main from content-header -->
@@ -20,8 +21,8 @@
 					</div>
 
 					<div class="span11">
-						<?php echo $XXXmenuFull; ?>
-						<?php echo $XXXmenuFullReverse; ?>
+						<?php echo $menuFull; ?>
+						<?php echo $menuFullReverse; ?>
 					</div>
 				</div>
 
@@ -33,7 +34,25 @@
 <!-- End Footer -->
 
 <!-- Begin Modals -->
-<?php echo $XXXmodalContact; ?>
+<div id="modal-contact" tabindex="-1" role="dialog" class="modal hide fade">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+			<i class="icon-remove"></i>
+		</button>
+		<h3>Contact Info</h3>
+	</div>
+	<div class="modal-body big">
+		<img src="/_testing/assets/images/logomark-color.png" alt="Mojo Mobility logo" />
+		<h4>Contact Info</h4>
+		<p>
+			<?php echo $contactInfo; ?>
+			<a href="mailto:sales@mojomobility.com">mailto:sales@mojomobility.com</a><br>
+		</p>
+		<hr>
+		<a href="contact" class="btn btn-link">View all contact info&nbsp;→</a>
+	</div>
+</div>';
+
 <!-- End Modals -->
 
 

@@ -7,37 +7,37 @@
 // Current Page URL
 // @var: string
 // NOTE - Brian Zoetewey wrote this. not quite sure what it's for, but I keep it around cause it did something.
-$XXXcurrentScript = substr($_SERVER['PHP_SELF'], strrpos($_SERVER['PHP_SELF'], '/') + 1);
+$currentScript = substr($_SERVER['PHP_SELF'], strrpos($_SERVER['PHP_SELF'], '/') + 1);
 
 // Project Name
 // @var: array
 // NOTE - this sets up all basic project-centric data to reuse wherever.
 // NOTE - with Couch CMS (currently implemented), other global information is in template_globals.php
-$XXXproject = array(
+$project = array(
 	'meta-description'	=> 'Mojo Mobility delivers position-free wireless charging technology to OEMs, which enables multiple mobile devices to charge simultaneously without the restriction of exact positioning of the transmitter and receiver. Traditional wireless charging has been limited by the necessity of precise alignment of the transmitter and receiver. We partner with OEMs worldwide to provide cutting-edge, production-ready wireless charging solutions.',
 	'base-url'			=> 'localhost/dev.mojomobility.com/'
 );
 
 // Main Menu Page List
 // @var: array
-// NOTE - make sure all these are included in both the @var $XXXpages and the page list in the .htaccess file
+// NOTE - make sure all these are included in both the @var $pages and the page list in the .htaccess file
 // NOTE - the order they are listed is the order they appear in the menu
-$XXXmenuPages = array('technology', 'solutions', 'patents', 'careers', 'contact');
+$menuPages = array('technology', 'solutions', 'patents', 'careers', 'contact');
 
 // Non Menu Active Pages
 // @var: array
 // NOTE - these pages don't exist in the main menu, but do exist as linkable pages
-$XXXnonMenuActivePages = array('home');
+$nonMenuActivePages = array('home');
 
 // All Active Pages
 // @var: array
 // NOTE - this merges menu and non-menu pages to get one list of all active pages
-$XXXallActivePages = array_merge($XXXnonMenuActivePages, $XXXmenuPages);
+$allActivePages = array_merge($nonMenuActivePages, $menuPages);
 
 // Reverse All Active Pages Order
 // @var: array
-// NOTE - a reversal of @var $XXXmenuPages
-$XXXreverseAllActivePagesOrder = array_reverse($XXXallActivePages);
+// NOTE - a reversal of @var $menuPages
+$reverseAllActivePagesOrder = array_reverse($allActivePages);
 
 
 // All Pages
@@ -49,7 +49,7 @@ $XXXreverseAllActivePagesOrder = array_reverse($XXXallActivePages);
 //		:url		= desired page url (should mirror what's in .htaccess)
 //		:in_dropdn	= optional, answer = dropdown name
 //		:publish	= optional, answer looked for is "no". used to grey-out pages that are in progress (or being updated live)
-$XXXpages = array(
+$pages = array(
 	'404' => array(
 		'title'		=> 'Error: Not Found',
 		'name'		=> '404 Error: Not Found',
@@ -104,13 +104,13 @@ $XXXpages = array(
 
 // Find Current Page
 // @script
-// NOTE - this matches the outcome of @var $XXXcurrentScript with the @var $XXXpages phpScript
-$XXXcurrentPage = null;
-$XXXcurrentPageID = null;
-foreach ($XXXpages as $XXXID => $XXXpage) {
-	if ($XXXpage['phpScript'] == $XXXcurrentScript) {
-		$XXXcurrentPage = $XXXpage;
-		$XXXcurrentPageID = $XXXID;
+// NOTE - this matches the outcome of @var $currentScript with the @var $pages phpScript
+$currentPage = null;
+$currentPageID = null;
+foreach ($pages as $ID => $page) {
+	if ($page['phpScript'] == $currentScript) {
+		$currentPage = $page;
+		$currentPageID = $ID;
 	}
 }
 
@@ -122,40 +122,40 @@ foreach ($XXXpages as $XXXID => $XXXpage) {
 // NOTE - the menu only uses <li> tags because of the way foundation uses classes. add <ul class="inline-list left/right"> for inline menus.
 /*
 // sets up dropdown menu
-$XXXdrop_items_company = array();
+$drop_items_company = array();
 */
-$XXXmenu = '
+$menu = '
 <nav id="menu-main" class="menu"><ul class="nav nav-pills">';
-foreach ($XXXmenuPages as $XXXID) {
-	$XXXpage = $XXXpages[$XXXID];
-	$XXXclass = $XXXID;
-	if ($XXXID == $XXXcurrentPageID)
-		$XXXclass .= ' active';
-	if ($XXXpage['publish'] == 'no')
-		$XXXclass .= ' unfinished';
-	$XXXitem = sprintf('<li class="link-%s"><a href="%s" title="%s"><span>%s</span></a></li>' . "\n", $XXXclass, $XXXpage['url'], $XXXpage['title'], $XXXpage['name']);
+foreach ($menuPages as $ID) {
+	$page = $pages[$ID];
+	$class = $ID;
+	if ($ID == $currentPageID)
+		$class .= ' active';
+	if ($page['publish'] == 'no')
+		$class .= ' unfinished';
+	$item = sprintf('<li class="link-%s"><a href="%s" title="%s"><span>%s</span></a></li>' . "\n", $class, $page['url'], $page['title'], $page['name']);
 	// add item to dropdown array
 	/*
-	if ($XXXpage['in_dropdn'] == 'company')
-		$XXXdrop_items_company[] = $XXXitem;
+	if ($page['in_dropdn'] == 'company')
+		$drop_items_company[] = $item;
 	// or else add it to the main nav
 	else
 	*/
-		$XXXmenu .= $XXXitem;
+		$menu .= $item;
 };
-$XXXmenu .=
+$menu .=
 	/*
 	// add dropdown menu
 	'<li class="dropdown-company dropdown">
 		<a class="dropdown-toggle" data-toggle="dropdown" title="Company"><span>Company <i class="icon-caret-down"></i></span></a>';
 		/*
 		// create dropdown menu
-		$XXXmenu .= '<ul class="dropdown-menu">';
-			foreach ($XXXdrop_items_company as $XXXID) {
-				$XXXmenu .= $XXXID;
+		$menu .= '<ul class="dropdown-menu">';
+			foreach ($drop_items_company as $ID) {
+				$menu .= $ID;
 			};
 
-			$XXXmenu .= '
+			$menu .= '
 		</ul>
 	</li>';
 	*/
@@ -165,30 +165,30 @@ $XXXmenu .=
 
 // Regular Alt Menu HTML
 // @script
-// NOTE - this is the same code as $XXXmenu, except it uses the Page Title for the Name
-$XXXmenuFull = '<nav id="menu-full" class="menu"><ul class="nav nav-pills">';
-foreach ($XXXallActivePages as $XXXID) {
-	$XXXpage = $XXXpages[$XXXID];
-	$XXXclass = $XXXID;
-	if ($XXXID == $XXXcurrentPageID)
-		$XXXclass .= ' active';
-	$XXXmenuFull .= sprintf('<li class="link-%s"><a href="%s" title="%s"><span>%s</span></a></li>' . "\n", $XXXclass, $XXXpage['url'], $XXXpage['title'], $XXXpage['title']);
+// NOTE - this is the same code as $menu, except it uses the Page Title for the Name
+$menuFull = '<nav id="menu-full" class="menu"><ul class="nav nav-pills">';
+foreach ($allActivePages as $ID) {
+	$page = $pages[$ID];
+	$class = $ID;
+	if ($ID == $currentPageID)
+		$class .= ' active';
+	$menuFull .= sprintf('<li class="link-%s"><a href="%s" title="%s"><span>%s</span></a></li>' . "\n", $class, $page['url'], $page['title'], $page['title']);
 };
-$XXXmenuFull .= '</ul></nav>';
+$menuFull .= '</ul></nav>';
 
 
 // Reverse Alt Menu HTML
 // @script
-// NOTE - this is the same code as $XXXmenu, but reversed and it uses the Page Title for the Name
-$XXXmenuFullReverse = '<nav id="menu-full-reverse" class="menu"><ul class="nav nav-pills">';
-foreach ($XXXreverseAllActivePagesOrder as $XXXID) {
-	$XXXpage = $XXXpages[$XXXID];
-	$XXXclass = $XXXID;
-	if ($XXXID == $XXXcurrentPageID)
-		$XXXclass .= ' active';
-	$XXXmenuFullReverse .= sprintf('<li class="link-%s"><a href="%s" title="%s"><span>%s</span></a></li>' . "\n", $XXXclass, $XXXpage['url'], $XXXpage['title'], $XXXpage['title']);
+// NOTE - this is the same code as $menu, but reversed and it uses the Page Title for the Name
+$menuFullReverse = '<nav id="menu-full-reverse" class="menu"><ul class="nav nav-pills">';
+foreach ($reverseAllActivePagesOrder as $ID) {
+	$page = $pages[$ID];
+	$class = $ID;
+	if ($ID == $currentPageID)
+		$class .= ' active';
+	$menuFullReverse .= sprintf('<li class="link-%s"><a href="%s" title="%s"><span>%s</span></a></li>' . "\n", $class, $page['url'], $page['title'], $page['title']);
 };
-$XXXmenuFullReverse .= '</ul></nav>';
+$menuFullReverse .= '</ul></nav>';
 
 
 // Email list
@@ -196,7 +196,7 @@ $XXXmenuFullReverse .= '</ul></nav>';
 //	:array identifier
 //		:name 		= email name
 //		:address	= email address
-$XXXemails = array(
+$emails = array(
     'sales' => array(
         'name'      => 'Sales / General',
         'address'   => 'sales@mojomobility.com',
@@ -218,17 +218,17 @@ $XXXemails = array(
 
 // Email List
 // @script
-$XXXemailList = '
+$emailList = '
 <div class="email-group">';
-foreach ($XXXemails as $XXXemail) {
-	$XXXe = $XXXemail[$XXXID];
-	$XXXemailList .= sprintf('<h5>%s</h5>' . "\n" . '<a href="mailto:%s">%s</a>' . "\n", $XXXe['name'], $XXXe['address']);
+foreach ($emails as $email) {
+	$e = $email[$ID];
+	$emailList .= sprintf('<h5>%s</h5>' . "\n" . '<a href="mailto:%s">%s</a>' . "\n", $e['name'], $e['address']);
 };
-$XXXemailList .= '</div>';
+$emailList .= '</div>';
 
 
 // Address
-$XXXcontactInfo = '
+$contactInfo = '
 <!-- FUNCTIONS -->
 3350 Scott Blvd...</br>
 Bldg. 37A<br>
@@ -237,7 +237,7 @@ Santa Clara, CA, 95054<br>
 
 
 // Calls #modal-contact, in footer
-$XXXcontactDiscuss = '
+$contactDiscuss = '
 <!-- FUNCTIONS -->
 <div class="contact-discuss-wrap">
 	<a class="btn btn-large btn-inverse btn-mojoblue btn-mojostyleflat" href="#modal-contact" data-toggle="modal">
@@ -245,30 +245,6 @@ $XXXcontactDiscuss = '
 		Contact us to discuss your application
 	</a>
 </div>';
-
-
-// Modals
-$XXXmodalContact = '
-<!-- FUNCTIONS -->
-<div id="modal-contact" tabindex="-1" role="dialog" class="modal hide fade">
-	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-			<i class="icon-remove"></i>
-		</button>
-		<h3>Contact Info</h3>
-	</div>
-	<div class="modal-body big">
-		<img src="/_testing/assets/images/logomark-color.png" alt="Mojo Mobility logo"/>
-		<h4>Contact Info</h4>
-		<p>';
-			$XXXmodalContact .= echo $XXXcontactInfo;
-			$XXXmodalContact .= '<a href="mailto:sales@mojomobility.com">mailto:sales@mojomobility.com</a><br>
-		</p>
-		<hr>
-		<a href="contact" class="btn btn-link">View all contact info&nbsp;→</a>
-	</div>
-</div>';
-
 
 
 // END FUNCTIONS INCLUDES FILE
