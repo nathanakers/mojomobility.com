@@ -195,10 +195,10 @@ $patentBoxes = '<div class="row">';
 foreach ($patents as $ID => $patent) {
     $item = '
     <div class="span4 fourths">
-        <a class="card" href="/_testing/assets/patents/' . echo $patent . '" target="_blank">
+        <a class="card" href="/_testing/assets/patents/' . $patent . '" target="_blank">
         <div class="hide-until-hover"><span><i class="icon-external-link-sign"></i></span></div>
-        <h3 class="icons"><i class="icon-file-text"></i>&nbsp;' . echo $patent['number'] .'</h3>
-        <p>' . echo $patent['title'] . '</p>
+        <h3 class="icons"><i class="icon-file-text"></i>&nbsp;' . $patent['number'] .'</h3>
+        <p>' . $patent['title'] . '</p>
     </div>';
     $patentBoxes .= $item;
 };
