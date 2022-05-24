@@ -46,7 +46,7 @@
 		<h4>Contact Info</h4>
 		<p>
 			<?php echo $contactInfo; ?>
-			<a href="mailto:sales@mojomobility.com">mailto:sales@mojomobility.com</a><br>
+			<a href="mailto:sales@mojomobility.com">sales@mojomobility.com</a><br>
 		</p>
 		<hr>
 		<a href="contact" class="btn btn-link">View all contact info&nbsp;→</a>
