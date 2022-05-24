@@ -17,7 +17,7 @@
 					</a>
 
 					<!-- Be sure to leave the brand out there if you want it shown -->
-					<a class="brand" href="/">
+					<a class="brand" href="/home">
 						<img src="/assets/images/logo.png" alt="Mojo Mobility logo" />
 					</a>
 
