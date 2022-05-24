@@ -218,19 +218,17 @@ $emails = array(
 
 // Email List
 // @script
-$emailList = '
-<div class="email-group">';
+$emailList = '';
 foreach ($emails as $email) {
-	$e = $email[$ID];
-	$emailList .= sprintf('<h5>%s</h5>' . "\n" . '<a href="mailto:%s">%s</a>' . "\n", $e['name'], $e['address']);
+	$emailList .= '<div class="email-group">';
+	$emailList .= sprintf('<h5>%s</h5>' . "\n" . '<a href="mailto:%s">%s</a>' . "\n", $email['name'], $email['address'], $email['address']);
+	$emailList .= '</div>';
 };
-$emailList .= '</div>';
 
 
 // Address
 $contactInfo = '
-<!-- FUNCTIONS -->
-3350 Scott Blvd...</br>
+3350 Scott Blvd.</br>
 Bldg. 37A<br>
 Santa Clara, CA, 95054<br>
 <a href="tel:6504460004">(650) 446-0004</a><br>';
@@ -238,7 +236,6 @@ Santa Clara, CA, 95054<br>
 
 // Calls #modal-contact, in footer
 $contactDiscuss = '
-<!-- FUNCTIONS -->
 <div class="contact-discuss-wrap">
 	<a class="btn btn-large btn-inverse btn-mojoblue btn-mojostyleflat" href="#modal-contact" data-toggle="modal">
 		<i class="icon-envelope"></i>

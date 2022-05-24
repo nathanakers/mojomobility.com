@@ -41,9 +41,9 @@ echo '
 		   2. FontAwesome 3.0
 		   3. Google Font CSS declaration(s)
 		   4. Main Project CSS (filemtime used) */ ?>
-	<link rel="stylesheet" href="/assets/css/bootstrap.css">
-	<!--link rel="stylesheet" href="/assets/css/bootstrap-responsive.css"-->
-	<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/vendor/css/bootstrap.css">
+	<!--link rel="stylesheet" href="/assets/vendor/css/bootstrap-responsive.css"-->
+	<link rel="stylesheet" href="/assets/vendor/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/assets/css/main.css?t=<?php echo filemtime('assets/css/main.css'); ?>">
