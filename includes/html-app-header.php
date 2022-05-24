@@ -2,7 +2,7 @@
 // BEGIN APP HEADER INCLUDES FILE
 // @has: HTML head + body tag
 // @requires: functions.php, app-footer.php
-// NOTE - built with Bootstrap 2.3 in mind, downloaded REF = http://www.initializr.com/
+// NOTE - built with Bootstrap 2.3 in mind, downloaded REF = https://www.initializr.com/
 // NOTE - you should not have to change anything in here unless you are updating from Bootstrap 2.3 or you have moved your files around
 // NOTE - 'filemtime' is a PHP variable used here to force browser cache-updating whenever the file is modified
 ?>
@@ -44,8 +44,8 @@ echo '
 	<link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
 	<!--link rel="stylesheet" href="/assets/css/vendor/bootstrap-responsive.css"-->
 	<link rel="stylesheet" href="/assets/css/vendor/font-awesome.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/assets/css/main.css?t=<?php echo filemtime('/assets/css/main.css'); ?>">
 	<?php /* JS:
 		   * modernizer & jquery included

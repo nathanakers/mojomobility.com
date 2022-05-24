@@ -22,7 +22,7 @@ $(document).ready(function() {
             footerHeightFix = 0; // will remove border-top from footerHeight calculation
             if ($('#footer').length > 0) {
                 footerHeight    = $('#footer').outerHeight(),
-                footerHeightFix = footerHeight - parseInt($('#footer').css('border-top-width')); 
+                footerHeightFix = footerHeight - parseInt($('#footer').css('border-top-width'));
             };
 
         var maincolumnOffset = 0,
@@ -58,7 +58,7 @@ $(document).ready(function() {
 
 
         // TESTING CLASS
-        // add #test to end of any url to get special targeted css. This can be used for testing small updates live without appearing 'live' 
+        // add #test to end of any url to get special targeted css. This can be used for testing small updates live without appearing 'live'
         // if (location.href.match('#test')) {
         //     $('body').addClass('test');
         // };
@@ -94,16 +94,16 @@ $(document).ready(function() {
         } else {
             $('#footer').css('position', 'fixed');
             // to show the footer (footer is set to fixed positioning), give #main a margin the same height as the footer
-            $('#main').css('margin-bottom', footerHeightFix + 'px');            
+            $('#main').css('margin-bottom', footerHeightFix + 'px');
         };
 
 
         // HEADER BOX SHADOW ADJUSTMENT
-        // @from: http://stackoverflow.com/questions/9179708/replicating-bootstraps-main-nav-and-subnav
+        // @from: https://stackoverflow.com/questions/9179708/replicating-bootstraps-main-nav-and-subnav
         // increases the box shadowing when scrolling, then removes when scrolling is not happening
         $(document).scroll(function(){
             $('.navbar-inner').addClass('box-shadow');
-            // timeout @from: http://stackoverflow.com/questions/9144560/jquery-scroll-detect-when-user-stops-scrolling
+            // timeout @from: https://stackoverflow.com/questions/9144560/jquery-scroll-detect-when-user-stops-scrolling
             clearTimeout($.data(this, 'scrollTimer'));
             $.data(this, 'scrollTimer', setTimeout(function() {
                 $('.navbar-inner').removeClass('box-shadow');
@@ -133,7 +133,7 @@ $(document).ready(function() {
 
 
         // ADJUST JOBLIST POSITIONING WITH SIDENAV CLICK
-        // @from: http://stackoverflow.com/questions/9288482/how-do-i-set-the-offset-for-scrollspy-in-bootstrap
+        // @from: https://stackoverflow.com/questions/9288482/how-do-i-set-the-offset-for-scrollspy-in-bootstrap
         // the nav uses element IDs to scroll to job lists. These would link to the top of the page and get covered by the banner.
         // this should run only for tablets and above
         if (docWidth > 767) {
@@ -159,7 +159,7 @@ $(document).ready(function() {
 
         // ADJUST CARD HEIGHTS TO BE EQUAL
         // @from: css-tricks.com/equal-height-blocks-in-rows/
-        
+
         $(window).load(function(){
             var currentTallest = 0,
                 currentRowStart = 0,
@@ -195,16 +195,16 @@ $(document).ready(function() {
                 for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
                     rowDivs[currentDiv].height(currentTallest);
                 }
-            });        
+            });
         });
 
     };
     runEverything();
 
 
-    // RERUN JS ON WINDOW RESIZE 
-    // @from: http://stackoverflow.com/questions/22720595/re-run-js-script-on-window-resize-or-mobile-screen-change
-    // @from: http://stackoverflow.com/questions/7280307/resize-javascript-window
+    // RERUN JS ON WINDOW RESIZE
+    // @from: https://stackoverflow.com/questions/22720595/re-run-js-script-on-window-resize-or-mobile-screen-change
+    // @from: https://stackoverflow.com/questions/7280307/resize-javascript-window
     $(window).resize(function() {
         // this tells the js to rerun everything even on window height adjustment
         $(window).height($(this).height());
