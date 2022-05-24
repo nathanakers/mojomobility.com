@@ -42,7 +42,7 @@
 		<h3>Contact Info</h3>
 	</div>
 	<div class="modal-body big">
-		<img src="/_testing/assets/images/logomark-color.png" alt="Mojo Mobility logo" />
+		<img src="/assets/images/logomark-color.png" alt="Mojo Mobility logo" />
 		<h4>Contact Info</h4>
 		<p>
 			<?php echo $contactInfo; ?>

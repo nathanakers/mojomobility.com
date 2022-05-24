@@ -17,8 +17,8 @@
 					</a>
 
 					<!-- Be sure to leave the brand out there if you want it shown -->
-					<a class="brand" href="/_testing/">
-						<img src="/_testing/assets/images/logo.png" alt="Mojo Mobility logo" />
+					<a class="brand" href="/">
+						<img src="/assets/images/logo.png" alt="Mojo Mobility logo" />
 					</a>
 
 					<!-- Everything you want hidden at 940px or less, place within here -->

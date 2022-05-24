@@ -1,8 +1,8 @@
 <?php
 // Include Functions & Headers
-include('/_testing/includes/functions.php');
-include('/_testing/includes/html-app-header.php');
-include('/_testing/includes/html-content-header.php');
+include('/includes/functions.php');
+include('/includes/html-app-header.php');
+include('/includes/html-content-header.php');
 ?>
 <!-- // BEGIN PAGE CONTENT (inside #main div) -->
 
@@ -195,7 +195,7 @@ $patentBoxes = '<div class="row">';
 foreach ($patents as $ID => $patent) {
     $item = '
     <div class="span4 fourths">
-        <a class="card" href="/_testing/assets/patents/' . $patent . '" target="_blank">
+        <a class="card" href="/assets/patents/' . $patent . '" target="_blank">
         <div class="hide-until-hover"><span><i class="icon-external-link-sign"></i></span></div>
         <h3 class="icons"><i class="icon-file-text"></i>&nbsp;' . $patent['number'] .'</h3>
         <p>' . $patent['title'] . '</p>
@@ -227,6 +227,6 @@ $patentBoxes .= '</div>';
 <!-- // END PAGE CONTENT -->
 <?php
 // Include Functions & Headers
-include('/_testing/includes/html-content-footer.php');
-include('/_testing/includes/html-app-footer.php');
+include('/includes/html-content-footer.php');
+include('/includes/html-app-footer.php');
 ?>

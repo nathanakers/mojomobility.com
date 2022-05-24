@@ -10,8 +10,8 @@
 // THE CONTENT FOOTER WAS INSERTED HERE
 ?>
 
-<script src="/_testing/assets/js/vendor/bootstrap.js"></script>
-<script src="/_testing/assets/js/main.js?t=<?php echo filemtime('assets/js/main.js'); ?>"></script>
+<script src="/assets/js/vendor/bootstrap.js"></script>
+<script src="/assets/js/main.js?t=<?php echo filemtime('assets/js/main.js'); ?>"></script>
 
 </body>
 

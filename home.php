@@ -1,8 +1,8 @@
 <?php
 // Include Functions & Headers
-include('/_testing/includes/functions.php');
-include('/_testing/includes/html-app-header.php');
-include('/_testing/includes/html-content-header.php');
+include('/includes/functions.php');
+include('/includes/html-app-header.php');
+include('/includes/html-content-header.php');
 ?>
 <!-- // BEGIN PAGE CONTENT (inside #main div) -->
 
@@ -21,7 +21,7 @@ include('/_testing/includes/html-content-header.php');
         <!-- Carousel items -->
         <div class="carousel-inner">
             <div class="item active" id="item-desk">
-                <img src="/_testing/assets/images/slider-desk.jpg" />
+                <img src="/assets/images/slider-desk.jpg" />
                 <div class="over-text">
                     <div class="container">
                         <div class="row">
@@ -35,7 +35,7 @@ include('/_testing/includes/html-content-header.php');
                 </div>
             </div>
             <div class="item" id="item-bedside">
-                <img src="/_testing/assets/images/slider-bed.jpg" />
+                <img src="/assets/images/slider-bed.jpg" />
                 <div class="over-text">
                     <div class="container">
                         <div class="row">
@@ -49,7 +49,7 @@ include('/_testing/includes/html-content-header.php');
                 </div>
             </div>
             <div class="item" id="item-cafe">
-                <img src="/_testing/assets/images/slider-cafe.jpg" />
+                <img src="/assets/images/slider-cafe.jpg" />
                 <div class="over-text">
                     <div class="container">
                         <div class="row">
@@ -63,7 +63,7 @@ include('/_testing/includes/html-content-header.php');
                 </div>
             </div>
             <div class="item" id="item-car">
-                <img src="/_testing/assets/images/slider-car.jpg" />
+                <img src="/assets/images/slider-car.jpg" />
                 <div class="over-text">
                     <div class="container">
                         <div class="row">
@@ -105,7 +105,7 @@ include('/_testing/includes/html-content-header.php');
                         <h2>What We Do</h2>
                         <p>Mojo Mobility delivers position-free wireless charging technology to OEMs, which enables multiple devices to charge simultaneously without the restriction of exact positioning of the transmitter and receiver. Traditional wireless charging has been limited by the necessity of precise alignment of the transmitter and receiver. We partner with OEMs worldwide to provide cutting-edge, production-ready wireless charging solutions. These solutions are industry proven and provide tremendous advantages over existing wireless charging technology. Our solutions are user-friendly, highly efficient, extremely safe, and meet all regulatory guidelines.</p>
                         <p>
-                            <a class="btn btn-large btn-inverse btn-mojoblue btn-mojostyleflat" href="/_testing/technology">
+                            <a class="btn btn-large btn-inverse btn-mojoblue btn-mojostyleflat" href="/technology">
                                 Explore Our Technology&nbsp;→
                             </a>
                         </p>
@@ -114,7 +114,7 @@ include('/_testing/includes/html-content-header.php');
                         <h2>OUR POINT OF VIEW</h2>
                         <p>We believe wireless charging is the future of a world that is becoming truly mobile. No longer will consumers be restricted by an array of cords and chargers to charge their mobile devices or by the cord of an electric vehicle charging station. Our technology solutions allow designers of powered products to re-think and re-shape their design ideas to free their customers of the constraints of wired charging.</p>
                         <p>
-                            <a class="btn btn-large btn-inverse btn-mojoblue btn-mojostyleflat" href="/_testing/solutions">
+                            <a class="btn btn-large btn-inverse btn-mojoblue btn-mojostyleflat" href="/solutions">
                                 View Our Solutions&nbsp;→
                             </a>
                         </p>
@@ -131,6 +131,6 @@ include('/_testing/includes/html-content-header.php');
 <!-- // END PAGE CONTENT -->
 <?php
 // Include Functions & Headers
-include('/_testing/includes/html-content-footer.php');
-include('/_testing/includes/html-app-footer.php');
+include('/includes/html-content-footer.php');
+include('/includes/html-app-footer.php');
 ?>
