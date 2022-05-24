@@ -193,14 +193,13 @@ $patents = array(
 
 $patentBoxes = '<div class="row">';
 foreach ($patents as $ID => $patent) {
-    $item = '
-    <div class="span4 fourths">
-        <a class="card" href="/assets/patents/' . $patent . '" target="_blank">
-        <div class="hide-until-hover"><span><i class="icon-external-link-sign"></i></span></div>
-        <h3 class="icons"><i class="icon-file-text"></i>&nbsp;' . $patent['number'] .'</h3>
-        <p>' . $patent['title'] . '</p>
+    $patentBoxes .= '<div class="span4 fourths">
+        <a class="card" href="/assets/patents/' . $ID . '" target="_blank">
+           <div class="hide-until-hover"><span><i class="icon-external-link-sign"></i></span></div>
+            <h3 class="icons"><i class="icon-file-text"></i>&nbsp;' . $patent['number'] .'</h3>
+            <p>' . $patent['title'] . '</p>
+        </a>
     </div>';
-    $patentBoxes .= $item;
 };
 $patentBoxes .= '</div>';
 ?>
