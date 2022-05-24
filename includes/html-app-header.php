@@ -34,19 +34,19 @@ echo '
 	<?php /* Icons: Favicon + Apple Touch
 		   * Included in /assets/images/ instead of domain root in case this site isn't itself at the root.
 		   * Also, 'filemtime' is used to force browser cache-updating whenever the file is modified. */ ?>
-	<link rel="shortcut icon" href="/assets/images/favicon.ico?t=<?php echo filemtime('assets/images/favicon.ico'); ?>">
-	<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png?t=<?php echo filemtime('assets/images/apple-touch-icon.png'); ?>">
+	<link rel="shortcut icon" href="/assets/images/favicon.ico?t=<?php echo filemtime('/assets/images/favicon.ico'); ?>">
+	<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png?t=<?php echo filemtime('/assets/images/apple-touch-icon.png'); ?>">
 	<?php /* CSS:
 		   1. Bootstrap 2.3.0 base and responsive addition
 		   2. FontAwesome 3.0
 		   3. Google Font CSS declaration(s)
 		   4. Main Project CSS (filemtime used) */ ?>
-	<link rel="stylesheet" href="/assets/vendor/css/bootstrap.css">
-	<!--link rel="stylesheet" href="/assets/vendor/css/bootstrap-responsive.css"-->
-	<link rel="stylesheet" href="/assets/vendor/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
+	<!--link rel="stylesheet" href="/assets/css/vendor/bootstrap-responsive.css"-->
+	<link rel="stylesheet" href="/assets/css/vendor/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/assets/css/main.css?t=<?php echo filemtime('assets/css/main.css'); ?>">
+	<link rel="stylesheet" href="/assets/css/main.css?t=<?php echo filemtime('/assets/css/main.css'); ?>">
 	<?php /* JS:
 		   * modernizer & jquery included
 		   * all other javascripts are included at the base in html-app-footer.php */ ?>
