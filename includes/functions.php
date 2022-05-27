@@ -228,9 +228,9 @@ foreach ($emails as $email) {
 
 // Address
 $contactInfo = '
-3350 Scott Blvd.</br>
-Bldg. 37A<br>
-Santa Clara, CA, 95054<br>
+3707 Heron Way<br>
+Palo Alto, CA 94303<br>
+USA<br>
 <a href="tel:6504460004">(650) 446-0004</a><br>';
 
 
