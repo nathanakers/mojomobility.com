@@ -189,7 +189,7 @@ $patents = array(
         'title' => 'System and Method for Inductive Charging of Portable Devices',
     ),
     'US11342777B2.pdf' => array(
-        'number' => 'US 11,342,777 B2,',
+        'number' => 'US 11,342,777 B2',
         'title' => 'Powering and/or Charging with More Than One Protocol',
     ),
     'US11342792.pdf' => array(
