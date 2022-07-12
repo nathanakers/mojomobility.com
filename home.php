@@ -7,7 +7,9 @@ include('includes/html-content-header.php');
 <!-- // BEGIN PAGE CONTENT (inside #main div) -->
 
 
-<!-- Content Slider -->
+<!-- Content Slider!! -->
+
+<!-- Hello Computing For All Level 2! -->
 
 <section id="content-carousel">
     <div id="carousel-main" class="carousel slide" data-inerval="3000">
